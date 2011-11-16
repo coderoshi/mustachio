@@ -22,7 +22,7 @@ module Mustachio
       )
       
       staches = YAML.load(File.read(File.join(File.dirname(__FILE__), '..', 'config', 'staches.yml')))
-      staches.map! do |stache|
+      staches.each do |name, stache|
         stache['vert_offset'] ||= 0
         stache['mouth_overlap'] ||= 0
         
@@ -30,7 +30,7 @@ module Mustachio
         unless stache['width'] && stache['height']
           stache['width'], stache['height'] = ImageSize.new(File.new(stache['file_path'])).get_size
         end
-        stache
+        # stache
       end
       @@mustaches = staches
     end

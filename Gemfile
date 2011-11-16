@@ -21,6 +21,7 @@ group :development, :test do
   
   gem 'ruby-debug19', :require => 'ruby-debug', :platforms => :ruby_19
   gem 'ruby-debug', :platforms => :ruby_18
+  gem 'thin'
 end
 
 group :production do
