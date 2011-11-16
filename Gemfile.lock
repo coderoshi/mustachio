@@ -42,7 +42,7 @@ GEM
       rbx-require-relative (> 0.0.4)
     linecache19 (0.5.12)
       ruby_core_source (>= 0.1.4)
-    magickly (1.3.0)
+    magickly (1.2.0)
       activesupport (>= 2.0.0)
       addressable (~> 2.2)
       dragonfly (~> 0.9.1)
